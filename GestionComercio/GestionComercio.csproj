@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FDEDA0B-11DA-484A-833E-8C1B726DE3E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GestionComercio</RootNamespace>
+    <AssemblyName>GestionComercio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaArticuloDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaArticuloDetalle.Designer.cs">
+      <DependentUpon>VentanaArticuloDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaArticuloEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaArticuloEliminar.Designer.cs">
+      <DependentUpon>VentanaArticuloEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaArticuloModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaArticuloModificar.Designer.cs">
+      <DependentUpon>VentanaArticuloModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaArticulosAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaArticulosAdd.Designer.cs">
+      <DependentUpon>VentanaArticulosAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaArticulos.Designer.cs">
+      <DependentUpon>VentanaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentanaCategoriaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaCategoriaDetalle.Designer.cs">
+      <DependentUpon>VentanaCategoriaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaCategoriaModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaCategoriaModificar.Designer.cs">
+      <DependentUpon>VentanaCategoriaModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaCategorias.Designer.cs">
+      <DependentUpon>VentanaCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaCategoriasAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaCategoriasAdd.Designer.cs">
+      <DependentUpon>VentanaCategoriasAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaMarcaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaMarcaDetalle.Designer.cs">
+      <DependentUpon>VentanaMarcaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaMarcaModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaMarcaModificar.Designer.cs">
+      <DependentUpon>VentanaMarcaModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaMarcas.Designer.cs">
+      <DependentUpon>VentanaMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaMarcasAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaMarcasAdd.Designer.cs">
+      <DependentUpon>VentanaMarcasAdd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaArticuloDetalle.resx">
+      <DependentUpon>VentanaArticuloDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaArticuloEliminar.resx">
+      <DependentUpon>VentanaArticuloEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaArticuloModificar.resx">
+      <DependentUpon>VentanaArticuloModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaArticulosAdd.resx">
+      <DependentUpon>VentanaArticulosAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaArticulos.resx">
+      <DependentUpon>VentanaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VentanaCategoriaDetalle.resx">
+      <DependentUpon>VentanaCategoriaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaCategoriaModificar.resx">
+      <DependentUpon>VentanaCategoriaModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaCategorias.resx">
+      <DependentUpon>VentanaCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaCategoriasAdd.resx">
+      <DependentUpon>VentanaCategoriasAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaMarcaDetalle.resx">
+      <DependentUpon>VentanaMarcaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaMarcaModificar.resx">
+      <DependentUpon>VentanaMarcaModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaMarcas.resx">
+      <DependentUpon>VentanaMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaMarcasAdd.resx">
+      <DependentUpon>VentanaMarcasAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{b98f857d-c36b-40bb-98ca-185969e7cf8c}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{8d82c5a5-edba-4a62-97f3-3a2390b7f94e}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
